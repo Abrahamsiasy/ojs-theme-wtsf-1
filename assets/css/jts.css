@@ -3,7 +3,7 @@
    OJS-compatible CSS Custom Properties
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;500;600;700&family=Crimson+Pro:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
 
 /* ============================================================
    1. CSS CUSTOM PROPERTIES — OJS-style variable naming
@@ -46,9 +46,9 @@
   --border-dark:          rgba(255,255,255,0.08);
 
   /* — Typography */
-  --font-display:         'Cormorant Garamond', 'Noto Serif SC', Georgia, serif;
-  --font-body:            'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-serif:           'Source Serif 4', 'Noto Serif SC', Georgia, serif;
+  --font-display:         'Merriweather', Georgia, 'Times New Roman', serif;
+  --font-body:            'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-serif:           'Crimson Pro', Georgia, 'Times New Roman', serif;
   --font-mono:            'IBM Plex Mono', 'SF Mono', Consolas, monospace;
   --font-zh:              'Noto Serif SC', serif;
 
