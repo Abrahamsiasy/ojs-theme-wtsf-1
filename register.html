@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create an Account — Journal of Taiji Science</title>
+<link rel="stylesheet" href="assets/css/jts.css">
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container">
+    <div class="utility-left">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg> Open Access</span>
+      <span class="sep">·</span><span>ISSN 2832-062X</span>
+      <span class="sep">·</span><span>DOI 10.57612</span>
+    </div>
+    <div class="utility-right">
+      <a href="#" data-lang-toggle>中文</a>
+      <span class="sep">·</span>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="site-logo">
+      <img src="assets/img/logo.svg" alt="JTS" class="logo-img">
+      <span class="logo-wordmark">
+        <span class="logo-title">Journal of Taiji Science</span>
+        <span class="logo-sub">太极科学杂志</span>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="current.html">Current</a>
+      <a href="archive.html">Archives</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="search-toggle" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></button>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-banner">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+      <span>Register</span>
+    </div>
+    <h1>Create an account</h1>
+    <p style="font-family: var(--font-serif); color: var(--text-muted); font-size: 1.0625rem; margin: 0; max-width: 720px;">
+      One account, multiple roles. Register as a reader, author, or reviewer — you can extend your roles anytime.
+    </p>
+  </div>
+</section>
+
+<section class="main-section">
+  <div class="container">
+
+    <div class="form-card form-card-wide reveal">
+
+      <!-- PERSONAL DETAILS -->
+      <div class="form-section">
+        <h3 class="form-section-title">Personal details</h3>
+        <p class="form-section-desc">Used for correspondence and author identification. Please use your full professional name.</p>
+
+        <div class="form-row form-row-2">
+          <div class="form-group">
+            <label for="first-name">First name <span class="req">*</span></label>
+            <input type="text" id="first-name" placeholder="Given name" required>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last name / Family name <span class="req">*</span></label>
+            <input type="text" id="last-name" placeholder="Surname" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="reg-email">Email <span class="req">*</span></label>
+            <input type="email" id="reg-email" placeholder="you@university.edu" required>
+            <span class="form-help">A verification link will be sent to this address.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- AFFILIATION -->
+      <div class="form-section">
+        <h3 class="form-section-title">Academic affiliation</h3>
+        <p class="form-section-desc">Helps editors assign appropriate reviewers and contextualize your submissions.</p>
+
+        <div class="form-row form-row-2">
+          <div class="form-group">
+            <label for="institution">Institution / Organization <span class="req">*</span></label>
+            <input type="text" id="institution" placeholder="University, lab, or independent" required>
+          </div>
+          <div class="form-group">
+            <label for="department">Department / Division</label>
+            <input type="text" id="department" placeholder="e.g., Kinesiology">
+          </div>
+        </div>
+
+        <div class="form-row form-row-2">
+          <div class="form-group">
+            <label for="country">Country <span class="req">*</span></label>
+            <select id="country" required>
+              <option value="">Choose…</option>
+              <option>Australia</option>
+              <option>Canada</option>
+              <option>China</option>
+              <option>Ethiopia</option>
+              <option>Germany</option>
+              <option>Greece</option>
+              <option>Indonesia</option>
+              <option>Japan</option>
+              <option>United Kingdom</option>
+              <option>United States</option>
+              <option>Other…</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="orcid">ORCID iD</label>
+            <input type="text" id="orcid" placeholder="0000-0000-0000-0000">
+            <span class="form-help">Recommended for authors. <a href="#">Register an ORCID →</a></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACCOUNT -->
+      <div class="form-section">
+        <h3 class="form-section-title">Account credentials</h3>
+        <p class="form-section-desc">Choose a username and a strong password (minimum 8 characters).</p>
+
+        <div class="form-row form-row-3">
+          <div class="form-group">
+            <label for="reg-username">Username <span class="req">*</span></label>
+            <input type="text" id="reg-username" placeholder="lowercase, no spaces" required>
+          </div>
+          <div class="form-group">
+            <label for="reg-password">Password <span class="req">*</span></label>
+            <input type="password" id="reg-password" placeholder="Min. 8 characters" required>
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm password <span class="req">*</span></label>
+            <input type="password" id="confirm-password" placeholder="Repeat password" required>
+          </div>
+        </div>
+      </div>
+
+      <!-- ROLES -->
+      <div class="form-section">
+        <h3 class="form-section-title">Register as</h3>
+        <p class="form-section-desc">Select all roles that apply. You can change these later in your account profile.</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.875rem;">
+          <label class="checkbox-group" style="padding: 0.875rem 1rem; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-md);">
+            <input type="checkbox" checked>
+            <div>
+              <strong style="display: block; font-weight: 600; font-size: 0.9375rem;">Reader</strong>
+              <span style="font-size: 0.75rem; color: var(--text-muted);">Receive notifications about new issues</span>
+            </div>
+          </label>
+          <label class="checkbox-group" style="padding: 0.875rem 1rem; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-md);">
+            <input type="checkbox">
+            <div>
+              <strong style="display: block; font-weight: 600; font-size: 0.9375rem;">Author</strong>
+              <span style="font-size: 0.75rem; color: var(--text-muted);">Submit manuscripts to JTS</span>
+            </div>
+          </label>
+          <label class="checkbox-group" style="padding: 0.875rem 1rem; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-md);">
+            <input type="checkbox">
+            <div>
+              <strong style="display: block; font-weight: 600; font-size: 0.9375rem;">Reviewer</strong>
+              <span style="font-size: 0.75rem; color: var(--text-muted);">Peer-review submissions in your field</span>
+            </div>
+          </label>
+        </div>
+
+        <div class="form-row" style="margin-top: 1.25rem;">
+          <div class="form-group">
+            <label for="interests">Reviewing interests</label>
+            <textarea id="interests" placeholder="Comma-separated keywords describing your areas of expertise (e.g. EEG, biomechanics, qigong, traditional Chinese medicine, RCT methodology)…" style="min-height: 100px;"></textarea>
+            <span class="form-help">Only required if you registered as a Reviewer.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONSENT -->
+      <div class="form-section">
+        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <label class="checkbox-group">
+            <input type="checkbox" required>
+            <span>I agree to the <a href="#">Privacy Statement</a> and consent to my data being processed in connection with this journal.</span>
+          </label>
+          <label class="checkbox-group">
+            <input type="checkbox">
+            <span>I'd like to receive periodic announcements about new issues, calls for papers, and editorial news.</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn btn-primary btn-lg">
+          Create account
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </button>
+        <a href="login.html" class="btn btn-outline btn-lg">Already have an account? Sign in</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><h4>Journal of Taiji Science</h4><p>An international, bilingual, peer-reviewed open-access journal published by the World Taiji Science Federation.</p><p style="font-family: var(--font-mono); font-size: 0.75rem; opacity: 0.6;">ISSN 2832-062X · DOI 10.57612 · © 2022–2026 WTSF</p></div>
+      <div class="footer-col"><h5>Journal</h5><ul><li><a href="about.html">About</a></li><li><a href="current.html">Current Issue</a></li><li><a href="archive.html">Archives</a></li><li><a href="#">Editorial Board</a></li></ul></div>
+      <div class="footer-col"><h5>For Authors</h5><ul><li><a href="#">Submission Guidelines</a></li><li><a href="register.html">Register</a></li><li><a href="#">Open Access Policy</a></li><li><a href="#">Author Fees</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><ul><li><a href="contact.html">Editorial Office</a></li><li><a href="mailto:editor@wtsf.org">editor@wtsf.org</a></li><li><a href="#">WTSF</a></li><li><a href="#">Privacy</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><div>Powered by OJS · Licensed under CC BY 4.0</div><div class="footer-meta"><a href="#">Sitemap</a><a href="#">Privacy</a></div></div>
+  </div>
+</footer>
+<script src="assets/js/jts.js"></script>
+</body>
+</html>
